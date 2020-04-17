@@ -33,15 +33,16 @@ body {
   background-image: url('../images/bg-pattern-desktop.svg')
 }
 
-// main {
-//   display: flex;
-//   flex-direction: column;
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-//   @media screen and (min-width: $desktop) {
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
-// }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .hero-container {
   .logo {
@@ -55,11 +56,23 @@ body {
   margin: 2em;
   text-align: center;
 
+  @media (min-width: $mobile) {
+    text-align:left;
+    margin-top: 5em;
+    margin-left: 12em;
+    max-width: 500px;
+  }
+
   h1 {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 45px;
     padding: 0.5em 0;
+
+    @media (min-width: $mobile) {
+      margin-top: 1em;
+      font-size: 72px;
+    }
 
     span { 
       font-weight: 100;
@@ -68,15 +81,13 @@ body {
   }
 
   .para {
-      color: $desaturatedRed;
-      font-size: 14px;
-      line-height: 1.5;
-  }
+    color: $desaturatedRed;
+    font-size: 14px;
+    line-height: 1.5;
 
-  @media (min-width: $mobile) {
-    // margin: 5em 0 0 10em;
-    text-align:left;
-    // width: 50%;
+    @media (min-width: $mobile) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -89,6 +100,10 @@ form {
     padding: 1.4em 2em;
     border: 2px $desaturatedRed solid;
     border-radius: 50px;
+
+    @media (min-width: $mobile) {
+      width: 100%;
+    }
 
     &::placeholder {
       color: $desaturatedRed;
@@ -110,6 +125,11 @@ form {
 
     img {
       padding-left: 5px;
+    }
+
+    @media (min-width: $mobile) {
+      right: 1px;
+      top: 1px;
     }
   }
 }
@@ -146,22 +166,8 @@ form {
   }
 }
 
-.image-container {
-  img {
-    // height: 100vh;
-    margin: 0;
-    width: 50%;
-  }
-}
-
-
-
-
-
-
 footer {
-  margin-top: 50px;
-  margin: 4em 2em;
+  margin: 8em 2em;
   text-align: center;
   line-height: 1.5;
   color: rgba($darkGrayishRed, 0.8)
