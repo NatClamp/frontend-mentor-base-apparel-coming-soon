@@ -58,8 +58,8 @@ main {
 
   @media (min-width: $mobile) {
     text-align:left;
-    margin-top: 5em;
-    margin-left: 12em;
+    margin-top: 4em;
+    margin-left: 10em;
     max-width: 500px;
   }
 
@@ -68,6 +68,7 @@ main {
     letter-spacing: 10px;
     font-size: 45px;
     padding: 0.5em 0;
+    color: $darkGrayishRed;
 
     @media (min-width: $mobile) {
       margin-top: 1em;
@@ -94,11 +95,12 @@ main {
 form {
   margin: 2em 0;
   position: relative;
+
   .input {
     width: 300px;
     font-size: 14px;
     padding: 1.4em 2em;
-    border: 2px $desaturatedRed solid;
+    border: 2px solid rgba($desaturatedRed, 0.4);
     border-radius: 50px;
 
     @media (min-width: $mobile) {
@@ -106,7 +108,7 @@ form {
     }
 
     &::placeholder {
-      color: $desaturatedRed;
+      color: rgba($desaturatedRed, 0.4);
     }
   }
 
@@ -118,10 +120,10 @@ form {
     position: absolute;
     right: -4px;
     top: 1px;
-    padding: 1em 1.8em;
+    padding: 1em 3em;
     border-radius: 50px;
     background-image: $peachGradient;
-    box-shadow: 5px 20px 20px 15px rgba($softRed, 0.2);
+    box-shadow: 5px 15px 15px 15px rgba($softRed, 0.1);
 
     img {
       padding-left: 5px;
