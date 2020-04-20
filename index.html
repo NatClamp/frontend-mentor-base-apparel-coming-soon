@@ -16,23 +16,24 @@
   <main>
 
     <div class="hero-container mobile">
-      <img src="images/logo.svg" class="logo" alt="">
-      <img src="images/hero-mobile.jpg" class="hero-mobile" alt="" />
+      <img src="images/logo.svg" class="logo" alt="Base apparel logo">
+      <img src="images/hero-mobile.jpg" class="hero-mobile" alt="Hero image for mobile" />
     </div>
 
     <section class="text-container left">
-      <img src="images/logo.svg" class="desktop" alt="" >
+      <img src="images/logo.svg" class="desktop" alt="Base apparel logo" >
       <h1><span>We're</span> coming soon</h1>
       <p class="para">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form action="" class="form">
-        <input type="text" placeholder="Email Address" class="input">
-        <img src="images/icon-error.svg" class="error-icon hidden"/>
-        <button type="submit"><img src="images/icon-arrow.svg" /></button>
+        <label for="email-signup" class="visuallyhidden"></label>
+        <input type="text" placeholder="Email Address" name="email-signup" class="input" aria-labelledby="email-signup" aria-label="Email address">
+        <img src="images/icon-error.svg" class="error-icon hidden" alt="Error icon"/>
+        <button type="submit" aria-label="submit-button" aria-labelledby="submit-button"><img src="images/icon-arrow.svg" alt="Arrow image for submit button"/></button>
         <p class="error hidden">Please provide a valid email</p>
       </form>
     </section>
 
-    <img src="images/hero-desktop.jpg" class="desktop right" alt="" />
+    <img src="images/hero-desktop.jpg" class="desktop right" alt="Hero image for desktop" />
 
   </main>
   
